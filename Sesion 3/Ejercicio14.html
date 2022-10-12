@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="./estilo.css">
+    <title>Ejercicio15| UdeA</title>
+</head>
+<body>
+    
+    <h1>Introducción a Js: Funciones</h1>
+
+    <script>
+        let multi = function(x,y){
+            return x*y;
+        }
+
+        let exp = function(x,y){
+            return Math.pow(x,y);
+        }
+
+        let suma= (x,y)=> {return x+y}; //omite la palabra function flecha
+
+        var res= multi(5,2);
+        document.write(`Multiplicación : ${res}`);
+        document.write('<br>');
+        res= suma(3,4);
+        document.write(`Suma : ${res}`);
+        document.write('<br>');
+        res=exp(5,3);
+        document.write(`Potencia : ${res}`);
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="./estilo.css">
+    <title>Ejercicio 5| UdeA</title>
+</head>
+<body>
+    <h1>Introducción js: Condicionales</h1>
+    <br>
+    <p>Ejecutar un programa que el usuario introduzca dos numeros e indique el mayor de los dos</p>
+    <br>
+
+    <script>
+        let dato1,dato2,num1,num2,resultado;
+        dato1=window.prompt("Primer numero");
+        num1=parseInt(dato1);
+
+        dato2=window.prompt("Segundo numero");
+        num1=parseInt(dato2);
+
+        if(num1>num2){
+            resultado="El mayor es el numero 1"
+        }
+        else{
+            resultado="el mayor es el numero 2"
+        }
+
+        document.write(`<h2>${resultado}<h2>`);
+
+    </script>
+
+
+</body>
+</html>

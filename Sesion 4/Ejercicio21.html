@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays en Js | UdeA</title>
+</head>
+<body>
+
+    <script>
+        var nombres= ["Maria","Jose","Carlos","Margarita","Alejandra","Pedro","Susana"];
+        var notas=[];
+
+        for(let i=0;i<nombres.length;i++){
+            notas.push(5);
+        }
+       document.write(`<h2>Notas de la asignatura </h2>`);
+       numero=prompt(`Introduzca el número del alumno(0-5)`);
+       num=parseInt(numero);
+       document.write(`<br>Nota de ${nombres[num]} inicial ${notas[num]}`);
+
+       datoNota= prompt(`Introduzca la nueva nota`);
+       valor=parseInt(datoNota);
+       notas[num]=valor;
+
+       numero2=prompt(`Introduzca el número del alumno 2(0-5)`);
+       num2=parseInt(numero2);
+
+       datoNota2= prompt(`Introduzca la nueva nota 2`);
+       valor2=parseInt(datoNota2);
+       notas[num2]=valor2;
+
+       document.write(`<br> <h2>Notas finales </h2>`);
+       for(let i=0; i< nombres.length;i++){
+        document.write(`Nombre No.:${i}, nombre ${nombres[i]}, notas: ${notas[i]} <br> `);
+       }
+       
+    </script>
+    
+</body>
+</html>

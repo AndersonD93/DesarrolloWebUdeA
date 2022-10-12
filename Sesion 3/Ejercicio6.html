@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="./estilo.css">
+    <title>Ejercicio 6| UdeA</title>
+</head>
+<body>
+    <h1>Introducción a Js: Condicionales</h1>
+    <br>
+    <p>Un Algoritmo que lea tres notas, calcule el promedio e indique si aprueba o no</p>
+    <br>
+<script>
+    let dato1,dato2,dato3,promedio;
+    let num1,num2,num3;
+
+    dato1=window.prompt("nota1");
+    num1= parseFloat(dato1);
+
+    
+    dato2=window.prompt("nota2");
+    num2= parseFloat(dato2);
+
+    
+    dato3=window.prompt("nota3");
+    num3= parseFloat(dato3);
+
+    promedio=(num1+num2+num3)/3;
+
+    if(promedio>=3){
+        res="Aprobado"
+    }
+    else{
+        res="No aprobado"
+    }
+    document.write(`Nota: ${promedio}`)
+    document.write(`<br>`)
+    document.write(`<h3>La nota final es: ${res}</h3>`)
+
+
+
+</script>
+    
+
+    
+</body>
+</html>

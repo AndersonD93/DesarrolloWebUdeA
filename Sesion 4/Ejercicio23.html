@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays en Js| UdeA</title>
+</head>
+<body>
+    <script>
+        var alumnos= [
+            {"nombre": "Claudia",
+             "nota": 5
+            },
+            {"nombre": "Javier",
+             "nota": 3
+            },  
+            {"nombre": "Darly",
+             "nota": 4
+            } 
+        ];
+
+        function Basis(){
+            while(confirm(`Aceptar para modificar la nota de un estudiante`)){
+                modificar();
+            }
+        }
+
+        function Intro(){
+            num=prompt('Introduzca el número del estudiante:');
+            n= parseFloat(num);
+            nota= prompt('Introduzca nueva nota');
+            nuevaNota= parseFloat(nota);
+        }
+
+        function modificar(){
+            Intro();
+            alumnos[n].nota=nuevaNota;
+        }
+
+        function mostrar(){
+            alumnos.forEach(function(item,index,array){
+                document.write(`Nombre: ${array[index].nombre}- Nota:${array[index].nota} <br>`);
+            });
+        }
+
+
+        //------------------
+        document.write('Notas version 2.0 <br>');
+        Basis();
+        mostrar();
+
+
+    </script>
+
+    
+</body>
+</html>

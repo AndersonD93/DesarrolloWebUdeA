@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | UdeA</title>
+    <script>
+        function saludar(){
+            let nom_usuario= document.frmdatos.entrada.value;
+            document.writeln(`Buen día estimado ${nom_usuario}`);
+        }
+    </script>
+
+
+</head>
+<body>
+    <h1>Aplicación de funciones incluyendo formularios</h1>
+
+    <form name="frmdatos">
+        Digite su nombre por favor: <input type="text" size="20" name="entrada"/>
+        <input type="button" onclick="saludar()" value="Presione aquí">
+    </form>
+
+
+
+</body>
+</html>

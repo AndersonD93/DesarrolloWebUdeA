@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="./estilo.css">
+    <title>Ejercicio7 | UdeA</title>
+</head>
+<body>
+    <h1>Calculadora de descuentos</h1>
+    <p>Renault Logal=10%; Clio=25%</p>
+
+    <script>
+        let marca;
+        let descuento="No cuenta con descuento";
+        marca=prompt('Ingrese Marca de carro');
+
+        if(marca=='logan'){
+            descuento="su descuento es igual al 10%";
+        
+        }else if(marca=='clio'){
+            descuento="su descuento es igual al 25%";
+
+        }else{
+            descuento=='No cuenta con descuento';
+        }
+
+        document.write('Marca :'+ marca.toUpperCase());
+        document.write('</br>');
+        document.write('Marca :'+marca.toLowerCase());
+        document.write('</br>');
+        document.write(`${descuento}`);
+    </script>
+    
+</body>
+</html>
