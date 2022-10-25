@@ -1,0 +1,27 @@
+[
+{
+"origen":"Palma",
+"destino":"Oslo",
+"url": "http://www.ibservis.com/vuelo1.html"
+},
+{
+"origen":"Lugo",
+"destino":"Madrid",
+"url":"http://www.ibservis.com/vuelo2.html"
+},
+{
+"origen":"Barna",
+"destino":"Paris",
+"url":"http://www.ibservis.com/vuelo3.html"
+},
+{
+"origen":"Palma",
+"destino":"Madrid",
+"url":"http://www.ibservis.com/vuelo4.html"
+},
+{
+"origen":"Palma",
+"destino":"Paris",
+"url":"http://www.ibservis.com/vuelo5.html"
+}
+]

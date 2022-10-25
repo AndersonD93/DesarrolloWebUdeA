@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Aviones</title>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script>
+        var xmlhttp= new XMLHttpRequest();
+        var url= "Aviones.txt";
+
+        xmlhttp.onreadystatechange= function(){
+            if(this.readyState==4 && this.status == 200){
+                var arrayVuelos = JSON.parse(xmlhttp.responseText);
+                mostrarArray(arrayVuelos);
+            }
+        };
+
+        xmlhttp.open("GET",url,true);
+        xmlhttp.send();
+
+        function mostrarArray(datos){
+            let out = "";
+            for(let i=0; i< datos.length;i++){
+                out += `<p> origen: ${datos[i].origen} <a href=${datos[i].url}>
+                    destino: ${datos[i].destino}</a></p></br>`;        
+            }
+            document.getElementById("salidaDatos").innerHTML=out;
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <div id="salidaDatos">
+
+
+    </div>
+
+    <div id="content">    
+    </div>
+    
+</body>
+</html>

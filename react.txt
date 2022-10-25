@@ -1,0 +1,15 @@
+React
+
+npx create-react-app mtic-app -> crear proyecto react (Hace las veces de npm -g global sin necesidad de hacer la instalación como tal en la maquina)
+cd mtic-app -> ingresar al proyecto
+npm strat -> iniciar y ejecutar el proyecto (node package manager es un gestor de librerias)
+npm uninstall -g create-react-app mitic-app -> eliminar el proyecto
+
+
+el formato es jsx-> 
+
+//promesas son acciones que se ejecutan en un futuro
+
+
+
+//Fetch API, recuperar recursos de internet, basado de promesas, uso para clientes y servidor

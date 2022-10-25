@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array con Js | UdeA</title>
+</head>
+<body>
+
+    <script>
+        const personas=[
+        { nombre:"Andrea",
+            edad: 34,
+            cargo: "programadora"
+        },
+
+        { nombre:"Melissa",
+            edad: 30,
+            cargo: "Diseñadora grafica"
+        },
+
+        { nombre:"Mateo",
+            edad: 42,
+            cargo: "Ingeniero Senior de Desarrollo"
+        },
+
+        { nombre:"Jose",
+            edad: 29,
+            cargo: "Arquitecto de Red"
+        },
+
+        { nombre:"Clara",
+            edad: 31,
+            cargo: "Arquitecto de Sotfware"
+        }
+        ];
+
+        const personasMayores= personas.filter((elemento,indice,arreglo)=>elemento.edad>=18);
+
+        for(let persona of personasMayores){
+            document.write(`Nombre:${persona.nombre}, Edad: ${persona.edad}, Cargo: ${persona.cargo}<br>`);
+        }
+
+    </script>
+    
+</body>
+</html>

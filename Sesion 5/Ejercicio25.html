@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json con Js | UdeA</title>
+</head>
+<body>
+
+    <!--Crear una llamada de tipo AJAX a recoger el contenido de un archivo JSON-->
+    
+    <script>
+        function cargarJson(){
+            let llamada = new XMLHttpRequest();
+            let url="datos.json"
+
+            llamada.onreadystatechange=function(){
+                if(this.readyState==4 && this.status==200){
+                    console.log("Recibida la Información del archivo Json");
+                    let datos = JSON.parse(this.responseText);
+                    console.log(datos);
+                }
+            }
+
+            console.log("Se envia la petición de usuario");
+            llamada.open("GET",url,true);
+            llamada.send();
+        }
+
+        window.onload= cargarJson;
+    </script>
+
+
+</body>
+</html>
