@@ -13,3 +13,5 @@ el formato es jsx->
 
 
 //Fetch API, recuperar recursos de internet, basado de promesas, uso para clientes y servidor
+
+//Await , espere que se cumpla la promesa para trabajar
