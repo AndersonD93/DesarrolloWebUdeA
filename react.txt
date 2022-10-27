@@ -14,4 +14,43 @@ el formato es jsx->
 
 //Fetch API, recuperar recursos de internet, basado de promesas, uso para clientes y servidor
 
-//Await , espere que se cumpla la promesa para trabajar
+//Await , espere que se cumpla la promesa para trabajar.
+
+
+
+C:\Program Files\MongoDB\Server\5.0\bin
+
+
+mongo=> inicia mongo
+show dbs => muestra las bd existentes
+use prueba1 =>Crear Base de datos consola y ubicarse
+db.libros.insertOne({codigo:1,nombre:'Backo to future',autor:'Spilberg',editoriales:['planeta','Siglo XXI']})=> Insertar un documento/registro
+tabla bdr= colecciones bdnr
+db.libros.find()=>Validar si el registro ya esta
+db.libros.insertMany([{codigo:2,nombre:'Backo to the future 2',autor:'Spilberg',editoriales:['planeta']},{codigo:3,nombre:'Backo to future 3',autor:'Spilberg',editoriales:['planeta','Siglo XXI']}])=>Hacer la inserción multiple
+show collections=>Saber las colecciones
+db.libros.drop()=>borrar colecciond de libros
+db.dropDatabase()=>Borrar la base de datos
+
+
+use blog=>Crear una base de datos llamada "blog".
+
+db.posts2.insertMany([{codigo:1,titulo:'Backo to the future 2',autor:'Spilberg',editoriales:['planeta']},{codigo:2,titulo:'Backo to future 3',autor:'Spilberg',editoriales:['planeta','Siglo XXI']}])=>Agregar una colección llamada "posts" e insertar 5 documentos con una estructura a su elección.
+
+show dbs=>Mostrar todas las bases de datos actuales.
+
+show collections=>Eliminar la colección "posts".
+
+db.dropDatabase()=>Eliminar la base de datos "blog" y mostrar las bases de datos existentes.
+
+
+
+
+
+
+
+
+
+
+
+

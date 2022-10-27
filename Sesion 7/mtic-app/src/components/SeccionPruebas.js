@@ -4,17 +4,39 @@ import Peliculas from './Peliculas';
 
 class SeccionPruebas extends Component{
 
+    contador=0;
+
+    constructor(props){
+        super(props);
+        this.state={contador:0};  
+    }
+
+    sumar(){
+        this.setState ({contador:(this.state.contador+1)});
+    }
+
+    restar(){
+        this.setState ({contador:(this.state.contador-1)});
+    }
 
     render(){
         return(
             <section id="content">
-                <h2 class="subheader">Ultimos articulos</h2>
-
+                <h2 className="subheader">Ultimos articulos</h2>
+                 <h2 className="subheader">Funciones y JSX basico</h2>
+                 <h2 className="subheader">Componentes</h2>    
         <section className='componentes'>
           <Micomponente></Micomponente>
           <Peliculas></Peliculas>
         </section>
-
+            <h2 className="subheader">Estado</h2>
+            <p>
+                Contado:{this.state.contador}
+            </p>
+            <p>
+                <input type="button" value="Sumar" onClick={this.sumar.bind(this)}></input>
+                <input type="button" value="Restar" onClick={this.restar.bind(this)}></input>
+            </p>
         </section>
 
         );
