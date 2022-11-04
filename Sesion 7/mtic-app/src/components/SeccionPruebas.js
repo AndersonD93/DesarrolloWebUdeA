@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Micomponente from './Micomponente'
 import Peliculas from './Peliculas';
+import MostrarCarrito from "./MostarCarrito";
 
 class SeccionPruebas extends Component{
 
@@ -23,6 +24,7 @@ class SeccionPruebas extends Component{
         return(
             <section id="content">
                 <h2 className="subheader">Ultimos articulos</h2>
+                <MostrarCarrito></MostrarCarrito>
                  <h2 className="subheader">Funciones y JSX basico</h2>
                  <h2 className="subheader">Componentes</h2>    
         <section className='componentes'>

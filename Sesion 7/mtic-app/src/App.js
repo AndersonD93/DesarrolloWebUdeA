@@ -4,6 +4,7 @@ import Slider from './components/Slider'
 import Sidebar from './components/Sidebar'
 import Footer from './components/Footer';
 import SeccionPruebas from './components/SeccionPruebas';
+import MostrarCarrito from './components/MostarCarrito';
 
 function presentacion(grupos,year){
   const presentacion=<div>
@@ -19,7 +20,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Slider></Slider>
-      
+
       <div className="center">
       <SeccionPruebas></SeccionPruebas>
       <Sidebar></Sidebar>
@@ -29,6 +30,7 @@ function App() {
       <Footer></Footer>
     </div>
   );
+  
 }
 
 export default App;
