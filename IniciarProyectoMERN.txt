@@ -1,0 +1,27 @@
+npm init
+
+Comando para dependencias de produccion
+npm i express cors dotenv mongoose
+
+npm i --save-dev nodemon
+
+modificar package.json
+
+"type":"module"
+sección script
+"start"="node index.js",
+"dev"="nodemon index.js" inicializar el servidor(cambios en caliente)
+
+ajduran27
+Bucaros12
+
+
+181.63.130.186/32
+
+mongodb+srv://<username>:<password>@cluster0.m3sjgbs.mongodb.net/test
+
+
+npm i cloudinary express-fileupload fs-extra
+
+
+Instalar la dependencia: npm i nodemailer

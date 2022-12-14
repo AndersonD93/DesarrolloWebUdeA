@@ -1,0 +1,21 @@
+npm create vite@latest frontend
+	--react
+	--js
+
+cd frontend
+npm install
+npm run dev
+
+framework para frontend
+tailwind css
+
+Crearlo
+npm install -D tailwindcss postcss autoprefixer
+Inizializarlo
+npx tailwindcss init -p
+
+Pquete Axios para comunicación frontend y backend
+https://www.npmjs.com/package/axios
+
+Dentro del frontend
+npm i axios

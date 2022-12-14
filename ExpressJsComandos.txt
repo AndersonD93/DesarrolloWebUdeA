@@ -1,0 +1,33 @@
+Preuebas de peticiones de usuario..
+Manejos de archivos front desde el backend
+Operaciones Crud
+
+Middleware: función next 
+
+manejo de rutas (endpoint)
+
+Comandos
+
+cd SitioDirectorio
+
+npm init => inicializar proyecto en la ruta que estoy
+enter
+
+npm install express => Descargar librerias Express
+
+
+Ejecutar en terminal
+node index.js
+
+node= Servidor
+
+
+Crear estructura para que automaticamente MongoDb la acepte
+
+npm i mongoose => Instalar dependencias de MongoDB
+
+reconfigurar servidor=> 
+
+app.js=> direccionamiento de las rutas
+
+npm i validator => Validar cadenas de texto
